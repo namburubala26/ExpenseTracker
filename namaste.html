@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice JavaScript</title>
+        <link rel="stylesheet" href="style123.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Expense Tracker</h1>
+            <form onsubmit="savetoLocalStorage(event)">
+                <!-- <label for="amount" class="form-label">AddExpense:</label>
+                <br>
+                <input type="amount" id="amount" class="form-control form-control-lg">
+                <br>
+                <label for="description" class="form-label">Description:</label>
+                <br>
+                <input type="description" id="description" class="form-control form-control-lg">
+                <br>
+                <label for="category" class="form-label">Choose A Category:</label> -->
+                <label>AddExpense:</label>
+                <br>
+                <input id="expense" type="number" name="expense" required/>
+                <br>
+                <label>Description:</label>
+                <br>
+                <input id="description" type="text" name="description" required/>
+                <br>
+                <label>Coose a category:</label>
+                <br>
+                <select name="category" id="category">
+                    <option></option>
+                    <option>Fuel</option>
+                    <option>Food</option>
+                    <option>Electricity</option>
+                    <option>Movie</option>
+                </select>
+                <br>
+                <br>
+                <button>Add Expense</button>
+            </form>
+        </div>
+        <ul id="listOfUsers"></ul>        
+    <script src="hug.js"></script>
+</body>
+</html>
